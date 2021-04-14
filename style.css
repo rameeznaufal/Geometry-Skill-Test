@@ -1,0 +1,45 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+}
+
+@font-face {
+  font-family: AlteHaas;
+  src: url(/assets/AlteHaasGroteskBold.ttf);
+}
+
+.canvas {
+  position: absolute;
+  display: block;
+}
+
+.button {
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 6px 12px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration:rgb(0, 0, 0);
+  position: absolute;
+  left:1080px;
+  top:640px;
+
+  font-family: AlteHaas ;
+  font-size: 30px;
+  margin: 0px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  color: #da5619;
+  border: 2px solid #da5619;
+}
+
+.button1:hover {
+  background-color: #da5619;
+  color: white;
+}
+
+
