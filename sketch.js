@@ -18,15 +18,15 @@ function preload() {
 }
 
 function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight);
+  let canvas = createCanvas(1536, 722);
    canvas.mouseMoved(text_animation);
   
    background(0);
   stroke(266)
   strokeWeight(7);
-  line(0,0,1450,windowHeight);
+  line(0,0,1450,722);
  
-  rect(centreX=windowWidth/3.3,centreY=windowHeight/8,600,600);
+  rect(centreX=1536/3.3,centreY=722/8,600,600);
   centreX+=300;
   centreY+=300;
   rectMode(CENTER);
@@ -111,8 +111,8 @@ function text_animation()
   noStroke();
   rect(200,500,500,300);
   let t=p=mouseX;
-  col_T=map(t,0,windowWidth,255,180);
-  pos_T=map(p,0,windowWidth,880,900);
+  col_T=map(t,0,1536,255,180);
+  pos_T=map(p,0,1536,880,900);
   textFont(Comfortaa);
   noStroke(); 
   fill(col_T); 
@@ -130,8 +130,7 @@ function startDrawing(){
 
 function draw() {
  if(drawing_started){
-    
-  if(mouseX!=pmouseX && mouseY!=pmouseY)
+    if(mouseX!=pmouseX && mouseY!=pmouseY)
     {arrR.push( Math.sqrt ( Math.pow ( x - centreX ,2 ) + Math.pow ( y - centreY ,2) ));
      count++;}
     //console.log(arrR[count-1]);
@@ -139,7 +138,7 @@ function draw() {
     strokeWeight(4);
     
     //to check within the boundary limits
-    if ( x < windowWidth/3.3 || x > (centreX+300) || y < windowHeight/8 || y > (centreY+300) )
+    if ( x < 1536/3.3 || x > (centreX+300) || y < 722/8 || y > (centreY+300) )
      {err=1;
        noLoop();
        return;}
@@ -188,7 +187,8 @@ function draw() {
     dx:mouseX-pmouseX,
     dy:mouseY-pmouseY,
     }   
-    line(x,y,x + strokePath.dx,y + strokePath.dy);
+    
+     line(x,y,x + strokePath.dx,y + strokePath.dy);
     x += strokePath.dx;
     y += strokePath.dy;
 
