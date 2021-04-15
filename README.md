@@ -10,5 +10,6 @@ A Visual game for improving geometry drawing skills for students in designing,ar
 ## An Overview on Its Working ##
 Using math statistical methods and geometry, the radius is calculated and proccessed with its mean and standard deviation using the below formulaes to get the predicted accuracy and radius.
 ![SD](https://user-images.githubusercontent.com/64145974/114754106-d1b58200-9d75-11eb-9ce6-d9096de98191.jpg) 
-
 ![Mean](https://user-images.githubusercontent.com/64145974/114754384-2527d000-9d76-11eb-8fc4-cacb0bbc066a.jpg)
+
+***NOTE:** Only works in desktop browsers*
