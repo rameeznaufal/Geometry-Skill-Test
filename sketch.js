@@ -131,8 +131,9 @@ function startDrawing(){
 function draw() {
  if(drawing_started){
     
-    arrR.push( Math.sqrt ( Math.pow ( x - centreX ,2 ) + Math.pow ( y - centreY ,2) ));
-    count++;
+  if(mouseX!=pmouseX && mouseY!=pmouseY)
+    {arrR.push( Math.sqrt ( Math.pow ( x - centreX ,2 ) + Math.pow ( y - centreY ,2) ));
+     count++;}
     //console.log(arrR[count-1]);
     stroke(0);
     strokeWeight(4);
